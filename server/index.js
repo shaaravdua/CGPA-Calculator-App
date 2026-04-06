@@ -15,7 +15,8 @@ const app = express();
 app.use(cors({
   origin: [
     'http://localhost:5173', 
-    'https://cgpa-calculator-app-alpha.vercel.app' // forcing deploy update
+    'https://cgpa-calculator-app-alpha.vercel.app',
+    'https://cgpa-calculator-ks58lts1t-shaaravduas-projects.vercel.app' // <-- Added the exact URL from the error!
   ],
   credentials: true,
 }));
