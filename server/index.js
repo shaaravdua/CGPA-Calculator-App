@@ -16,8 +16,10 @@ app.use(cors({
   origin: [
     'http://localhost:5173', 
     'https://cgpa-calculator-app-alpha.vercel.app',
-    'https://cgpa-calculator-ks58lts1t-shaaravduas-projects.vercel.app' // <-- Added the exact URL from the error!
+    'https://cgpa-calculator-ks58lts1t-shaaravduas-projects.vercel.app' // keep your preview link too just in case!
   ],
+  methods: ['GET', 'POST', 'PUT', 'DELETE', 'OPTIONS'], // Explicitly allow these
+  allowedHeaders: ['Content-Type', 'Authorization'], // Explicitly allow these headers
   credentials: true,
 }));
 app.use(express.json());
